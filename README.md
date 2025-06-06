@@ -1,59 +1,78 @@
-# StudentDashboardAssignment
+# 🎓 Student Dashboard App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
+A simple Angular app that allows users to add students, view a list of students, and see dynamic messages and styling based on student grades.
 
-## Development server
+## 🚀 Overview
 
-To start a local development server, run:
+The **Student Dashboard** is a basic Angular project built for learning and practicing core Angular concepts such as:
+
+- Two-way data binding
+- Event handling
+- Built-in structural directives (`*ngIf`, `*ngFor`, `ngSwitch`)
+- Conditional styling using `ngClass`
+
+## 🎯 Objective
+
+To build a working application that reinforces Angular fundamentals through:
+
+- Handling form inputs
+- Conditionally rendering UI elements
+- Applying styles dynamically based on logic
+- Practicing Angular template syntax
+
+## 📸 Demo
+
+> 💡 Sample Input:
+Name: John
+Grade: A
+
+> 📋 Output after clicking **Add Student**:
+
+
+---
+
+## 🛠️ Features & Functionality
+
+### ✅ Add Student Form
+- Input fields for:
+  - Student Name
+  - Student Grade
+- Two-way binding using `[(ngModel)]`
+- Event binding on button `(click)` to add the student
+- Template reference variables (`#ref`) used to reset inputs after adding
+
+### ✅ Student List
+- Rendered using `*ngFor`
+- Each student shows name, grade, and a grade-specific badge
+
+### ✅ Conditional Messages
+- Show `"No students were found."` when the student list is empty using `*ngIf`
+
+### ✅ Grade Badge using `ngSwitch`
+- A → 🟢 Excellent  
+- B → 🟡 Good  
+- C → 🔴 Needs Improvement  
+- Other → ⚪ Not Categorized
+
+### ✅ Dynamic Styling with `ngClass`
+- Green for Grade A  
+- Orange for Grade B  
+- Red for Grade C  
+- Gray for others
+
+---
+
+## 📁 Project Structure
 
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+src/
+├── app/
+│   ├── student/
+│   │   ├── student.component.ts
+│   │   ├── student.component.html
+│   │   ├── student.component.css
+│   └── app.component.ts
+│   └── app.component.html
+├── assets/
+├── index.html
+└── main.ts

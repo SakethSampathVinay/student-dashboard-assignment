@@ -1,0 +1,51 @@
+/* src/app/student/student.component.css */
+.student-dashboard {
+  max-width: 500px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+.empty {
+  font-style: italic;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.grade-a {
+  color: green;
+}
+
+.grade-b {
+  color: orange;
+}
+
+.grade-c {
+  color: red;
+}
+
+.grade-default {
+  color: gray;
+}
